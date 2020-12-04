@@ -18,9 +18,9 @@ const HomePage = () => {
 
   return (
     <>
-      <br />
+      <p p-3 />
       <h1>Latest Products</h1>
-      <br />
+      <p p-3 />
       {loading ? (
         <Loader />
       ) : error ? (
