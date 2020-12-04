@@ -1,6 +1,6 @@
 const products = [
   {
-    name: "Airpods Wireless Bluetooth Headphones",
+    name: "Airpods Wireless Headphones",
     image: "/images/airpods.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
@@ -12,15 +12,15 @@ const products = [
     numReviews: 12,
   },
   {
-    name: "iPhone 11 Pro 256GB Memory",
+    name: "iPhone 12 Pro Max 512GB Memory",
     image: "/images/phone.jpg",
     description:
-      "Introducing the iPhone 11 Pro. A transformative triple-camera system that adds tons of capability without complexity. An unprecedented leap in battery life",
+      "Introducing the iPhone 12 Pro Max. A transformative triple-camera system that adds tons of capability without complexity. An unprecedented leap in battery life",
     brand: "Apple",
     category: "Electronics",
-    price: 599.99,
+    price: 1999.99,
     countInStock: 7,
-    rating: 4.0,
+    rating: 5.0,
     numReviews: 8,
   },
   {
@@ -36,25 +36,25 @@ const products = [
     numReviews: 12,
   },
   {
-    name: "Sony Playstation 4 Pro White Version",
+    name: "Sony Playstation 5 White Version",
     image: "/images/playstation.jpg",
     description:
       "The ultimate home entertainment center starts with PlayStation. Whether you are into gaming, HD movies, television, music",
     brand: "Sony",
     category: "Electronics",
-    price: 399.99,
+    price: 1399.99,
     countInStock: 11,
     rating: 5,
     numReviews: 12,
   },
   {
-    name: "Logitech G-Series Gaming Mouse",
+    name: "Mad Catz The Authentic R.A.T Pro",
     image: "/images/mouse.jpg",
     description:
-      "Get a better handle on your games with this Logitech LIGHTSYNC gaming mouse. The six programmable buttons allow customization for a smooth playing experience",
-    brand: "Logitech",
+      "Get a better handle on your games with this Mad Catz LIGHTSYNC gaming mouse. The six programmable buttons allow customization for a smooth playing experience",
+    brand: "Mad Catz",
     category: "Electronics",
-    price: 49.99,
+    price: 99.99,
     countInStock: 7,
     rating: 3.5,
     numReviews: 10,
@@ -66,7 +66,7 @@ const products = [
       "Meet Echo Dot - Our most popular smart speaker with a fabric design. It is our most compact smart speaker that fits perfectly into small space",
     brand: "Amazon",
     category: "Electronics",
-    price: 29.99,
+    price: 89.99,
     countInStock: 0,
     rating: 4,
     numReviews: 12,
