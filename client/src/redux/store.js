@@ -3,7 +3,13 @@ import thunk from "redux-thunk";
 import { composeWithDevTools } from "redux-devtools-extension";
 import reducers from "./reducers/root-reducer";
 
-const initialState = {};
+const cartItemFromStorage = localStorage.getItem("cartItems")
+  ? JSON.parse(localStorage.getItem("cartItems"))
+  : [];
+
+const initialState = {
+  cart: { cartItems: cartItemFromStorage },
+};
 
 const middleware = [thunk];
 
