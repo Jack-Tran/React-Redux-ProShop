@@ -29,7 +29,7 @@ const CartPage = ({ match, location, history }) => {
     }
   }, [dispatch, productId, quantity]);
 
-  const removeFromCartHandler = (id) => {
+  const onClickHandler = (id) => {
     dispatch(removeFromCart(id));
   };
 
@@ -80,7 +80,7 @@ const CartPage = ({ match, location, history }) => {
                     <Button
                       type="button"
                       variant="light"
-                      onClick={() => removeFromCartHandler(item.product)}
+                      onClick={() => onClickHandler(item.product)}
                     >
                       <i className="fas fa-trash"></i>
                     </Button>
