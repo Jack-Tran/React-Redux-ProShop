@@ -40,9 +40,8 @@ const CartPage = ({ match, location, history }) => {
   return (
     <Row>
       <Col md={8}>
-        <p p-3 />
+        <p className="py-3" />
         <h1>Shopping Cart</h1>
-        <p p-3 />
         {cartItems.length === 0 ? (
           <Message>
             Your cart is empty <Link to="/">Go Back</Link>
@@ -92,7 +91,8 @@ const CartPage = ({ match, location, history }) => {
         )}
       </Col>
       <Col md={4}>
-        <br />
+        <p className="py-3" />
+
         <Card>
           <ListGroup variant="flush">
             <ListGroup.Item>

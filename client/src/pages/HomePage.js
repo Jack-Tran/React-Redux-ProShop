@@ -18,9 +18,8 @@ const HomePage = () => {
 
   return (
     <>
-      <p p-3="true" />
+      <p className="py-3" />
       <h1>Latest Products</h1>
-      <p p-3="true" />
       {loading ? (
         <Loader />
       ) : error ? (

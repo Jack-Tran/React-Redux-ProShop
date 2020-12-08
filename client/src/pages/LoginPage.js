@@ -32,7 +32,7 @@ const LoginPage = ({ location, history }) => {
 
   return (
     <FormContainer>
-      <p p-3="true" />
+      <p className="py-3" />
       <h1>Login</h1>
       {error && <Message variant="danger">{error}</Message>}
       {loading && <Loader />}
@@ -46,6 +46,7 @@ const LoginPage = ({ location, history }) => {
             onChange={(event) => setEmail(event.target.value)}
           ></Form.Control>
         </Form.Group>
+
         <Form.Group controlId="password">
           <Form.Label>Password</Form.Label>
           <Form.Control
@@ -55,6 +56,7 @@ const LoginPage = ({ location, history }) => {
             onChange={(event) => setPassword(event.target.value)}
           ></Form.Control>
         </Form.Group>
+
         <Button type="submit" variant="primary">
           Login
         </Button>
