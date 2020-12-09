@@ -5,6 +5,13 @@ import {
   ORDER_DETAILS_REQUEST,
   ORDER_DETAILS_SUCCESS,
   ORDER_DETAILS_FAIL,
+  ORDER_PAY_REQUEST,
+  ORDER_PAY_SUCCESS,
+  ORDER_PAY_FAIL,
+  ORDER_PAY_RESET,
+  ORDER_CURRENT_USER_REQUEST,
+  ORDER_CURRENT_USER_SUCCESS,
+  ORDER_CURRENT_USER_FAIL,
 } from "../types/orderTypes";
 
 export const orderCreateReducer = (state = {}, action) => {
@@ -45,6 +52,50 @@ export const orderDetailsReducer = (
         order: action.payload,
       };
     case ORDER_DETAILS_FAIL:
+      return {
+        loading: false,
+        error: action.payload,
+      };
+    default:
+      return state;
+  }
+};
+
+export const orderPayReducer = (state = {}, action) => {
+  switch (action.type) {
+    case ORDER_PAY_REQUEST:
+      return {
+        loading: true,
+      };
+    case ORDER_PAY_SUCCESS:
+      return {
+        loading: false,
+        success: true,
+      };
+    case ORDER_PAY_FAIL:
+      return {
+        loading: false,
+        error: action.payload,
+      };
+    case ORDER_PAY_RESET:
+      return {};
+    default:
+      return state;
+  }
+};
+
+export const orderCurrentUserReducer = (state = { orders: [] }, action) => {
+  switch (action.type) {
+    case ORDER_CURRENT_USER_REQUEST:
+      return {
+        loading: true,
+      };
+    case ORDER_CURRENT_USER_SUCCESS:
+      return {
+        loading: false,
+        orders: action.payload,
+      };
+    case ORDER_CURRENT_USER_FAIL:
       return {
         loading: false,
         error: action.payload,
